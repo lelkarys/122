@@ -3,10 +3,8 @@ var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.present
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `╭─「➻❥ *owner* ➻❥」
 │➯ ⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍
-│➯Wa.me/79531126750 (CREADOR)
-│➯Wa.me/79531126750 (CREADOR) 
-│➯Wa.me/79531126750 (CREADOR)
-│➯Wa.me/77072763560 (CREADOR)
+│➯Wa.me/79531126750 (Создатель)
+│➯Wa.me/77072763560 (Создательница)
 ╰───────────────╯`.trim()   
 let buttonMessage= {
 'document': { url: `https://github.com` },

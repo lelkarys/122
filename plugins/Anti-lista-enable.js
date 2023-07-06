@@ -1,30 +1,30 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 let optionsFull = `--------------------------------
-*Opción:* ✨ | WELCOME
-*Comando:* /enable welcome
-*Descripción:* Activa o desactiva la bienvenida en el grupo.
+*Opción:* ✨ | ПРИВЕТСТВИЕ
+*Comando:* /включить приветствие
+*Descripción:* Включить или отключить приветствие в группе.
 --------------------------------
-*Option:* ✨ | WELCOME
-*Command:* /enable welcome
-*Description:* Activates or deactivates the welcome in the group.
+*Option:* ✨ | ПРИВЕТСТВИЕ
+*Command:* /включить приветствие
+*Description:* Активирует или деактивирует приветствие в группе.
 --------------------------------
-*Opción:* 🌎 | MODO PUBLICO
-*Comando:* /enable public
-*Descripción:* El Bot se vuelve de uso publico y/o privado.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Opción:* 🌎 | ОБЩЕСТВЕННЫЙ
+*Comando:* /включить общественный
+*Descripción:* Эта команда может быть использована только владельцами бота для общего пользования и приватного доступа.
+*Nota:* Эта команда может быть использована только владельцами ботов.
 --------------------------------
-*Option:* 🌎 | PUBLIC MODE
-*Command:* /enable public
-*Description:* The Bot becomes for public and/or private use.
-*Note:* This command can only be used by Bot owners.
+*Option:* 🌎 | ОБЩЕСТВЕННЫЙ
+*Command:* /включить общественный
+*Description:* Бот становится доступным для публичного и/или частного использования.
+*Note:* Эта команда может быть использована только владельцами ботов.
 --------------------------------
-*Opción:* 🔗 | ANTILINK
-*Comando:* /enable antilink
+*Opción:* 🔗 | АНТИССЫЛКА
+*Comando:* /включить антиссылка
 *Descripción:* Activa o desactiva el anti-enlaces de WhatsApp.
 *Nota:* Se necesita tener activo el restrict.
 --------------------------------
-*Option:* 🔗 | ANTI-LINK
-*Command:* /enable antilink
+*Option:* 🔗 | АНТИССЫЛКА
+*Command:* /включить антиссылка
 *Description:* Activate or deactivate the anti-links of WhatsApp.
 *Note:* You need to have the restrict active.
 --------------------------------
@@ -180,7 +180,7 @@ let optionsFull = `--------------------------------
 *Note:* This command can only be used
 --------------------------------`.trim()
 
-let isEnable = /true|enable|(turn)?on|1/i.test(command)
+let isEnable = /true|включить|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
 let bot = global.db.data.settings[conn.user.jid] || {}
@@ -439,11 +439,11 @@ default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, { text: optionsFull }, { quoted: m })
 throw false
 }
-conn.sendMessage(m.chat, { text: `🧿𝐎𝐏𝐂𝐈𝐎𝐍: ${type}\n️🔮𝐄𝐒𝐓𝐀𝐃𝐎: ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'}\n🗂️𝐏𝐀𝐑𝐀: ${isAll ? 'ESTE BOT' : isUser ? '' : 'ESTE CHAT'}` }, { quoted: m })        
-conn.sendMessage(m.chat, { text: `🧿 OPTION: ${type}\n️🔮 STATUS: ${isEnable ? 'ON' : 'OFF'}\n🗂️TO: ${isAll ? 'THIS BOT' : isUser ? '' : 'THIS CHAT'}` }, { quoted: m })        
+conn.sendMessage(m.chat, { text: `🧿 КОМАНДА: ${type}\n️🔮𝐄𝐒𝐓𝐀𝐃𝐎: ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'}\n🗂️𝐏𝐀𝐑𝐀: ${isAll ? 'ESTE BOT' : isUser ? '' : 'ESTE CHAT'}` }, { quoted: m })        
+conn.sendMessage(m.chat, { text: `🧿 КОМАНДА: ${type}\n️🔮СТАТУС: ${isEnable ? 'ВКЛЮЧЕНА' : 'ВЫКЛЮЧЕНА'}\n🗂️КОМУ: ${isAll ? 'THIS BOT' : isUser ? '' : 'ЭТОМУ ЧАТУ'}` }, { quoted: m })        
 }
-handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+handler.help = ['вкл', 'выкл'].map(v => v + 'ючить <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?[01])$/i
+handler.command = /^((вк|вык)лючить|(tru|fals)e|(turn)?[01])$/i
 handler.register = true
 export default handler
