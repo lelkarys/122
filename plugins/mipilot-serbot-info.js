@@ -1,8 +1,8 @@
 async function handler(m, { usedPrefix }) {
 let users = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]  
 const message = users.map(v => '▢➯ wa.me/' + v.jid.replace(/[^0-9]/g, '') + `?text=${usedPrefix}serbot (${v.name})\n`).join('\n')
-const replyMessage = (message.length === 0) ? "*NO HAY SUB BOTS DISPONIBLE. VERIFIQUE MÁS TARDE.*\n\n\n*NO SUB BOTS AVAILABLE. CHECK LATER*" : message
-await m.reply( '(💥) AQUÍ TIENES LA LISTA DE SUBBOTS SI QUIERES QUE UNO DE ELLOS ENTRE PUEDES HABLAR CON ELLOS O DIRECTAMENTE TE PUEDES CONVERTIR EN UN BOT USANDO EL COMANDO /SERBOT EN EL NÚMERO OFICIAL DEL BOT*\n\n\n(💥) HERE YOU HAVE THE LIST OF SUBBOTS IF YOU WANT ONE OF THEM TO ENTER YOU CAN TALK TO THEM OR DIRECTLY YOU CAN BECOME A BOT USING THE /SERBOT COMMAND ON THE OFFICIAL NUMBER OF THE BOT*')
+const replyMessage = (message.length === 0) ? "*НЕТ СУББОТОВ. ПРОВЕРЬТЕ ПОЗЖЕ.*\n\n\n*НЕТ СУББОТОВ. ПРОВЕРИТЬ ПОЗЖЕ*" : message
+await m.reply( '(💥) ВОТ СПИСОК СУББОТОВ ЕСЛИ ВЫ ХОТИТЕ ОДНОГО ИЗ НИХ ВОЙТИ, ВЫ МОЖЕТЕ ПОГОВОРИТЬ С НИМИ ИЛИ НАПРЯМУЮ, ВЫ МОЖЕТЕ СТАТЬ БОТОМ, ИСПОЛЬЗУЯ КОМАНДУ /SERBOT EN EL NÚMERO OFICIAL DEL BOT*\n\n\n(💥) ЗДЕСЬ У ВАС ЕСТЬ СПИСОК СУББОТОВ ЕСЛИ ВЫ ХОТИТЕ ОДИН ИЗ НИХ ВОЙТИ, ВЫ МОЖЕТЕ ПОГОВОРИТЬ С НИМИ ИЛИ НАПРЯМУЮ, ВЫ МОЖЕТЕ СТАТЬ БОТОМ, ИСПОЛЬЗУЯ КОМАНДУ /SERBOT НА ОФИЦИАЛЬНЫЙ НОМЕР БОТА*')
 await m.reply(replyMessage.trim())}
 handler.command = handler.help = ['listjadibot','bots','subsbots']
 handler.tags = ['jadibot']
