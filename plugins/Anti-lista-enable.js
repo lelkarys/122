@@ -203,7 +203,7 @@ throw false
 }}
 chat.antiviewonce = isEnable 
 break
-case 'modohorny':
+case 'порно':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
