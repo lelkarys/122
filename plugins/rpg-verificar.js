@@ -18,7 +18,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
   m.reply(`╭「➻❥𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰➻❥」
-│➯⛥❏[🌴]𝙷𝙾𝙻𝙰 𝚈𝙰 𝙴𝚂𝚃Á𝚂 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾 
+│➯⛥❏[🌴]ПРИВЕТ 𝚈𝙰 𝙴𝚂𝚃Á𝚂 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾 
 │➯⛥❏[🤴]𝙽𝙾𝙼𝙱𝚁𝙴 ${name}
 │➯⛥❏[🏧]𝙴𝙳𝙰𝙳 ${age} 𝙰Ñ𝙾𝚂 
 │➯⛥❏[™️]𝙽Ú𝙼𝙴𝚁𝙾 𝙳𝙴 𝚂𝙴𝚁𝙸𝙴
@@ -29,6 +29,6 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
 
-handler.command = /^(Reg|reg|registrar|reg(ister)?)$/i
+handler.command = /^(рег|reg|registrar|reg(ister)?)$/i
 
 export default handler

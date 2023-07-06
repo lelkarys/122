@@ -10,7 +10,7 @@ sourceUrl: `https://github.com/OFC-YOVANI/HADES-BOT-MD.git`}}})
 }
 handler.help = ['linkgroup']
 handler.tags = ['group']
-handler.command = /^link(gro?up)?$/i
+handler.command = /^ссылка(gro?up)?$/i
 handler.group = true
 handler.botAdmin = true
 handler.register = true
