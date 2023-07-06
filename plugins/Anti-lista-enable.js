@@ -356,7 +356,6 @@ if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, { text: options
 throw false
 }
 conn.sendMessage(m.chat, { text: `🧿 КОМАНДА: ${type}\n️🔮СТАТУС: ${isEnable ? 'ВКЛЮЧЕНА' : 'ВЫКЛЮЧЕНА'}\n🗂️КОМУ: ${isAll ? 'ЭТОМУ БОТУ' : isUser ? '' : 'ЭТОМУ ЧАТУ'}` }, { quoted: m })        
-conn.sendMessage(m.chat, { text: `🧿 КОМАНДА: ${type}\n️🔮СТАТУС: ${isEnable ? 'ВКЛЮЧЕНА' : 'ВЫКЛЮЧЕНА'}\n🗂️КОМУ: ${isAll ? 'ЭТОМУ БОТУ' : isUser ? '' : 'ЭТОМУ ЧАТУ'}` }, { quoted: m })        
 }
 handler.help = ['вкл', 'выкл'].map(v => v + 'ючить <option>')
 handler.tags = ['group', 'owner']
