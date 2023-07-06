@@ -1,178 +1,94 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 let optionsFull = `--------------------------------
-*Opción:* ✨ | ПРИВЕТСТВИЕ
-*Comando:* /включить приветствие
+*Вариант:* ✨ | ПРИВЕТСТВИЕ
+*Команда:* /включить приветствие
 *Descripción:* Включить или отключить приветствие в группе.
 --------------------------------
-*Option:* ✨ | ПРИВЕТСТВИЕ
-*Command:* /включить приветствие
-*Description:* Активирует или деактивирует приветствие в группе.
---------------------------------
-*Opción:* 🌎 | ОБЩЕСТВЕННЫЙ
-*Comando:* /включить общественный
-*Descripción:* Эта команда может быть использована только владельцами бота для общего пользования и приватного доступа.
-*Nota:* Эта команда может быть использована только владельцами ботов.
---------------------------------
 *Option:* 🌎 | ОБЩЕСТВЕННЫЙ
-*Command:* /включить общественный
+*Команда:* /включить общественный
 *Description:* Бот становится доступным для публичного и/или частного использования.
 *Note:* Эта команда может быть использована только владельцами ботов.
 --------------------------------
-*Opción:* 🔗 | АНТИССЫЛКА
-*Comando:* /включить антиссылка
-*Descripción:* Activa o desactiva el anti-enlaces de WhatsApp.
-*Nota:* Se necesita tener activo el restrict.
+*Вариант:* 🔗 | АНТИССЫЛКА
+*Команда:* /включить антиссылка
+*Описание:* Активировать или деактивировать антиссылки WhatsApp.
+*Примечание:* Вам необходимо активировать ограничение.
 --------------------------------
-*Option:* 🔗 | АНТИССЫЛКА
-*Command:* /включить антиссылка
-*Description:* Activate or deactivate the anti-links of WhatsApp.
-*Note:* You need to have the restrict active.
+*Вариант:* 🔗 | АНТИССЫЛКА 2
+*Команда:* /включить антиссылка2
+*Описание:* Включить или отключить анти-ссылки, начиная с HTTPS..
+*Примечание:* Вам необходимо активировать ограничение.
 --------------------------------
-*Opción:* 🔗 | АНТИССЫЛКА 2
-*Comando:* /включить антиссылка2
-*Descripción:* Activa o desactiva el anti-enlaces que inician en HTTPS.
-*Nota:* Se necesita tener activo el restrict.
---------------------------------
-*Option:* 🔗 | ANTI-LINK 2
-*Command:* /enable antilink2
-*Description:* Enables or disables anti-links starting at HTTPS.
-*Note:* You need to have the restrict active.
---------------------------------
-*Opción:* 🔎 | DETECT
-*Comando:* /enable detect
-*Descripción:* Activa o desacriva las notificaciones de cambios en el grupo.
+*Вариант:* 🔎 | ОБНАРУЖИТЬ
+*Команда:* /включить обнаружить
+*Описание:* Активировать или деактивировать уведомления об изменениях в группе.
 --------------------------------
 --------------------------------
-*Opción:* 🔎 | DETECT 2
-*Comando:* /enable detect2
-*Descripción:* Detecta modificaciones en el grupo y mantiene una mejor gestion.
+*Вариант:* ❗ | ОГРАНИЧИТЬ
+*Команда:* /включить ограничить
+*Описание:* Включение или отключение ограничений для ботов, например удаление или добавление людей в группу.
+*Примечание: * Эту команду могут использовать только владельцы бота..
 --------------------------------
 --------------------------------
-*Opción:* ❗ | RESTRICT
-*Comando:* /enable restrict
-*Descripción:* Activa o desactiva las restricciones del Bot, como la de sacar o agregar personas a un grupo.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Вариант:* ☑️ | АВТОЧТЕНИЕ
+*Команда:* /включить авточтение
+*Описание:* Автоматически помечать сообщения и статусы как прочитанные.
+*Примечание:* Эту команду могут использовать только владельцы ботов..
 --------------------------------
+*Вариант:* 🔊 | АУДИО
+*Команда:* /включить аудио
+*Описание:* Активирует или деактивирует аудиокоманды без префиксов, в группе.
 --------------------------------
-*Opción:* ☑️ | AUTOREAD
-*Comando:* /enable autoread
-*Descripción:* Marca como leido los mensajes y los estados automáticamente.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Вариант:* 👾 | АВТОСТИКЕР
+*Команда:* /включить автостикер 
+*Описание:* Все изображения или видео, отправленные в группу, конвертируются в стикеры.. 
 --------------------------------
-*Option:* ☑️ | AUTOREAD
-*Command:* /enable autoread
-*Description:* Automatically mark messages and statuses as read.
-*Note:* This command can only be used by Bot owners.
+*Вариант:* 💬 | PCONLY
+*Команда:* /enable pconly
+*Descripción:* El Bot solo responderá a los Командаs si es un chat privado.
+*Nota:* Este Команда solo podrá ser usado por owners del Bot.
 --------------------------------
-*Opción:* 🔊 | AUDIOS
-*Comando:* /enable audios
-*Descripción:* Activa o desactiva los comandos de audios sin prefijos, en el grupo.
+*Вариант:* 🏢 | GCONLY
+*Команда:* /enable gconly
+*Descripción:* El Bot solo respondera a los Командаs si es un grupo. 
+*Nota:* Este Команда solo podrá ser usado por owners del Bot.
 --------------------------------
-*Option:* 🔊 | SOUNDS
-*Command:* /enable audios
-*Description:* Activates or deactivates the audio commands without prefixes, in the group.
---------------------------------
-*Opción:* 👾 | AUTOSTICKER
-*Comando:* /enable autosticker 
-*Descripción:* Todas las imagenes o videos enviados en el grupo se convierten en stickers. 
---------------------------------
-*Option:* 👾 | AUTOSTICKER
-*Command:* /enable autosticker
-*Description:* All images or videos sent in the group become stickers.
---------------------------------
-*Opción:* 💬 | PCONLY
-*Comando:* /enable pconly
-*Descripción:* El Bot solo responderá a los comandos si es un chat privado.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
---------------------------------
-*Option:* 💬 | PCONLY
-*Command:* /enable pconly
-*Description:* The Bot will only respond to commands if it is a private chat.
-*Note:* This command can only be used by Bot owners.
---------------------------------
-*Opción:* 🏢 | GCONLY
-*Comando:* /enable gconly
-*Descripción:* El Bot solo respondera a los comandos si es un grupo. 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
---------------------------------
-*Opción:* ❌ | ANTIVIEWONCE 
-*Comando:* /enable antiviewonce
+*Вариант:* ❌ | ANTIVIEWONCE 
+*Команда:* /enable antiviewonce
 *Descripción:* Las imagenes enviadas para ver solo una vez, son reenviadas normal por el Bot. 
 --------------------------------
-*Option:* ❌ | ANTIVIEW ONCE
-*Command:* /enable antiviewonce
-*Description:* The images sent to see only once, are resent normally by the Bot. 
---------------------------------
-*Opción:* 🤬 | ANTITOXIC
-*Comando:* /enable antitoxic
+*Вариант:* 🤬 | ANTITOXIC
+*Команда:* /enable antitoxic
 *Descripción:* Detecta la malas palabras y advierte al participante del grupo, antes de ser eliminado.
 *Nota:* Se necesita tener activo el restrict.
 --------------------------------
-*Option:* 🤬 | ANTITOXIC
-*Command:* /enable antitoxic
-*Description:* Detects bad words and warns the group participant, before being eliminated.
-*Note:* You need to have the restrict active
---------------------------------
-*Opción:* 🕸️ | ANTITRABAS
-*Comando:* /enable antitraba
+*Вариант:* 🕸️ | ANTITRABAS
+*Команда:* /enable antitraba
 *Descripción:* El Bot detecta textos largos que podrian ser virus y causar lag en el chat y elimina al usuario.
 *Nota:* Se necesita tener activo el restrict.
 --------------------------------
-*Option:* 🕸️ | ANTI-JAM
-*Command:* /enable antitraba
-*Description:* The Bot detects long texts that could be viruses and cause chat lag and deletes the user.
-*Note:* You need to have active
---------------------------------
-*Opción:* 👎 | ANTIARABES
-*Comando:* /enable antiarabes
+*Вариант:* 👎 | ANTIARABES
+*Команда:* /enable antiarabes
 *Descripción:* Si un numero árabe se uné al grupo, el Bot lo elimina automaticamente.
 *Nota:* Se necesita tener activo el welcome y el restrict.
 --------------------------------
-*Option:* 👎 | ANTI-ARAB
-*Command:* /enable antiarabes
-*Description:* If an Arabic number joins the group, the Bot automatically removes it.
-*Note:* You need to have the welcome and the restrict active.
---------------------------------
-*Opción:* 👎 | ANTIARABES 2
-*Comando:* /enable antiarabes2
+*Вариант:* 👎 | ANTIARABES 2
+*Команда:* /enable antiarabes2
 *Descripción:* Si un numero árabe escribe en el grupo, el Bot lo elimina automaticamente.
 *Nota:* Se necesita tener activo el restrict.
 --------------------------------
-*Option:* 👎 | ANTI-ARAB 2
-*Command:* /enable antiarabes2
-*Description:* If an Arabic number writes in the group, the Bot automatically deletes it.
-*Note:* You need to have the restrict active.
+*Вариант:* 🤖 | MODEJADIBOT
+*Команда:* /enable modejadibot
+*Descripción:* Activa o desactiva el uso del Команда para sub bots (${usedPrefix}serbot / ${usedPrefix}jadibot). 
+*Nota:* Este Команда solo podrá ser usado por owners del Bot.
 --------------------------------
-*Opción:* 🤖 | MODEJADIBOT
-*Comando:* /enable modejadibot
-*Descripción:* Activa o desactiva el uso del comando para sub bots (${usedPrefix}serbot / ${usedPrefix}jadibot). 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
---------------------------------
-*Option:* 🤖 | MODEJADIBOT
-*Command:* /enable modejadibot
-*Description:* Enables or disables the use of the command for sub bots (${usedPrefix}serbot / ${usedPrefix}jadibot).
-*Note:* This command can only
---------------------------------
-*Opción:* 👑 | MODOADMIN
-*Comando:* /enable modoadmin
+*Вариант:* 👑 | MODOADMIN
+*Команда:* /enable modoadmin
 *Descripción:* El Bot solo responderá a los admins del grupo.
 --------------------------------
-*Option:* 👑 | ADMIN MODE
-*Command:* /enable adminmode
-*Description:* The Bot will only respond to group admins.
---------------------------------
-*Opción:* 😃 | SIMSIMI
-*Comando:* /enable simsimi
+*Вариант:* 😃 | SIMSIMI
+*Команда:* /enable simsimi
 *Descripción:* El Bot empezará a responder a los mensajes usando la IA de SimSimi.
---------------------------------
-*Option:* 😃 | SIMSIMI
-*Command:* /enable simsimi
-*Description:* The Bot will start responding to messages using SimSimi's AI.
---------------------------------
-*Opción:* ⏳ | ANTISPAM
-*Comando:* /enable antispam
-*Descripción:* El Bot detecta cuando un usuario hace spam de comando y lo banea por 5 segundos y lo advierte.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
 --------------------------------
 *Option:* ⏳ | ANTISPAM
 *Command:* /enable antispam
@@ -199,7 +115,7 @@ throw false
 }
 chat.welcome = isEnable
 break
-case 'detect':
+case 'обнаружить':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -211,7 +127,7 @@ throw false
 }
 chat.detect = isEnable
 break
-case 'detect2':
+case 'обнаружить2':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -303,7 +219,7 @@ throw false
 }}
 chat.modoadmin = isEnable          
 break    
-case 'autosticker':
+case 'автостикер':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -311,7 +227,7 @@ throw false
 }}
 chat.autosticker = isEnable          
 break
-case 'audios':
+case 'аудио':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -319,7 +235,7 @@ throw false
 }}
 chat.audios = isEnable          
 break
-case 'restrict':
+case 'ограничить':
 isAll = true
 if (!isOwner) {
 global.dfail('owner', m, conn)
@@ -335,7 +251,7 @@ throw false
 }
 global.opts['nyimak'] = isEnable
 break
-case 'autoread':
+case 'авточтение':
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
