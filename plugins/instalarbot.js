@@ -34,7 +34,7 @@ let str = `╭「➻❥𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰➻
 ╰───────────────╯
 🍁᭢━━━━━━━━━᭥🍁᭢
 ╭「➻❥ *APK-TERMUX* ➻❥」
-│➯ https://www.mediafire.com/file/190g4b86nhyof7b/com.termux_118.apk/file?dkey=wfddtbi5jtj98
+│➯ https://www.mediafire.com
 ╰───────────────╯
 🍁᭢━━━━━━━━━᭥🍁᭢
 ╭「➻❥Número para ayuda➻❥」
@@ -51,29 +51,7 @@ let str = `╭「➻❥𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰➻
 │➯pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget && pkg install yarn
 │➯wget -O - https://raw.githubusercontent.com/OFC-YOVANI/HADES-BOT-OMEGA/master/install.sh | bash
 ╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭「➻❥𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚃𝙴𝚁𝙼𝚄𝚇➻❥」
-│➯*opción 2 de instalación"
-│➯cd && termux-setup-storage
-│➯apt-get update -y && apt-get upgrade -y
-│➯pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn 
-│➯git clone https://github.com/OFC-YOVANI/HADES-BOT-OMEGA.git && cd HADES-BOT-OMEGA
-│➯yarn 
-│➯npm install
-│➯npm update
-│➯npm start
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭「➻❥ *ACTIVAR* ➻❥」
-│➯cd HADES-BOT-OMEGA
-│➯npm start
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭「➻❥ *pide otro código* ➻❥」
-│➯cd HADES-BOT-OMEGA
-│➯rm -rf Session-activa
-│➯npm start
-╰───────────────╯`.trim()
+`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
