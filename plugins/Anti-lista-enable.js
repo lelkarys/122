@@ -439,8 +439,8 @@ default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, { text: optionsFull }, { quoted: m })
 throw false
 }
-conn.sendMessage(m.chat, { text: `🧿 КОМАНДА: ${type}\n️🔮𝐄𝐒𝐓𝐀𝐃𝐎: ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'}\n🗂️𝐏𝐀𝐑𝐀: ${isAll ? 'ESTE BOT' : isUser ? '' : 'ESTE CHAT'}` }, { quoted: m })        
-conn.sendMessage(m.chat, { text: `🧿 КОМАНДА: ${type}\n️🔮СТАТУС: ${isEnable ? 'ВКЛЮЧЕНА' : 'ВЫКЛЮЧЕНА'}\n🗂️КОМУ: ${isAll ? 'THIS BOT' : isUser ? '' : 'ЭТОМУ ЧАТУ'}` }, { quoted: m })        
+conn.sendMessage(m.chat, { text: `🧿 КОМАНДА: ${type}\n️🔮СТАТУС: ${isEnable ? 'ВКЛЮЧЕНА' : 'ВЫКЛЮЧЕНА'}\n🗂️КОМУ: ${isAll ? 'ЭТОМУ БОТУ' : isUser ? '' : 'ЭТОМУ ЧАТУ'}` }, { quoted: m })        
+conn.sendMessage(m.chat, { text: `🧿 КОМАНДА: ${type}\n️🔮СТАТУС: ${isEnable ? 'ВКЛЮЧЕНА' : 'ВЫКЛЮЧЕНА'}\n🗂️КОМУ: ${isAll ? 'ЭТОМУ БОТУ' : isUser ? '' : 'ЭТОМУ ЧАТУ'}` }, { quoted: m })        
 }
 handler.help = ['вкл', 'выкл'].map(v => v + 'ючить <option>')
 handler.tags = ['group', 'owner']
