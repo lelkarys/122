@@ -28,8 +28,8 @@ let optionsFull = `--------------------------------
 *Description:* Activate or deactivate the anti-links of WhatsApp.
 *Note:* You need to have the restrict active.
 --------------------------------
-*Opción:* 🔗 | ANTILINK 2
-*Comando:* /enable antilink2
+*Opción:* 🔗 | АНТИССЫЛКА 2
+*Comando:* /включить антиссылка2
 *Descripción:* Activa o desactiva el anti-enlaces que inician en HTTPS.
 *Nota:* Se necesita tener activo el restrict.
 --------------------------------
@@ -187,7 +187,7 @@ let bot = global.db.data.settings[conn.user.jid] || {}
 let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
 switch (type) {
-case 'welcome':
+case 'приветствие':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -263,7 +263,7 @@ throw false
 }
 global.opts['self'] = !isEnable
 break
-case 'antilink':
+case 'антиссылка':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -271,7 +271,7 @@ throw false
 }}
 chat.antiLink = isEnable
 break
-case 'antilink2':
+case 'антиссылка2':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
