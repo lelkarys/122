@@ -3,9 +3,9 @@ var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.present
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `╭─「➻❥ *owner* ➻❥」
 │➯ ⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍
-│➯Wa.me/5212412377467 (CREADOR)
+│➯Wa.me/79531126750 (CREADOR)
 │➯Wa.me/5212411261883 (CREADOR) 
-│➯Wa.me/5212411719888 (CREADOR)
+│➯Wa.me/79531126750 (CREADOR)
 │➯Wa.me/5212411347465 (CREADOR)
 ╰───────────────╯`.trim()   
 let buttonMessage= {
