@@ -1,74 +1,74 @@
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 @tag 𝙳𝙴 𝙰𝙻𝙶𝚄𝙽 𝙿𝙰𝚁𝚃𝙸𝙲𝙸𝙿𝙰𝙽𝚃𝙴 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙾 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙿𝙴𝚁𝚂𝙾𝙽𝙰*\n\n\n*[❗𝐈𝐍𝐅𝐎❗] ENTER THE @tag OF SOME PARTICIPANT OF THE GROUP OR THE NAME OF A PERSON*`
-if (command == 'gay2') {
+if (!text) throw `*[❗ИНФО❗] ВЫБЕРИТЕ УЧАСНИКА ГРУППЫ @номер ИЛИ ВВЕДИТЕ ИМЯ УЧАСНИКА ГРУППЫ*`
+if (command == 'дурак') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES 🏳️‍🌈* *${(500).getRandom()}%* *GAY*_
-`.trim(), m, m.mentionedJid ? {
+_*${text.toUpperCase()}* *ДУРАК😵НА* *${(500).getRandom()}%* *ПОДТВЕРЖДЕННО*_
+ `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}
-if (command == 'lesbiana') {
+if (command == 'умный') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES 🏳️‍🌈* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()}*_
+_*${text.toUpperCase()}* *УМНЫЙ 🤓 НА* *${(500).getRandom()}%* 
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})} 
-if (command == 'pajero') {
+if (command == 'любит') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES 😏💦* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()}*_
+_*${text.toUpperCase()}* *ОН ВАС 😍 ЛЮБИТ НА* *${(500).getRandom()}%* *ПОДТВЕРЖДЕННО*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}   
-if (command == 'pajera') {
+if (command == 'дура') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES 😏💦* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()}*_
+_*${text.toUpperCase()}* *ДУРА 🙀 НА* *${(500).getRandom()}%* *ПОДТВЕРЖДЕННО*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}     
-if (command == 'puto') {
+if (command == 'любит1') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()},* *MÁS INFORMACIÓN A SU PRIVADO 🔥🥵 XD*_
+_*${text.toUpperCase()}* *ОНА ВАС 😍 ЛЮБИТ 😘НА* *${(500).getRandom()}%* *ПОДТВЕРЖДЕННО*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}     
-if (command == 'puta') {
+if (command == 'правда') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()},* *MÁS INFORMACIÓN A SU PRIVADO 🔥🥵 XD*_
+_*${text.toUpperCase()}* *ВОТ НА СКОЛЬКО ПРАВДА* *${(500).getRandom()}%* *ПОДТВЕРЖДЕННО*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}   
-if (command == 'manco') {
+if (command == 'какашка') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()} 💩*_
+_*${text.toUpperCase()}* *НА СТОЛЬКО ТЫ * *${(500).getRandom()}%* *КАКАШКА 💩*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}
-if (command == 'manca') {
+if (command == 'русский') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()} 💩*_
+_*${text.toUpperCase()}* *ТЫ РУССКИЙ НА* *${(500).getRandom()}%* *А ОСТАЛЬНОЕ ПОМЕСЬ РУССКИЙ АРМЯН*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}     
-if (command == 'rata') {
+if (command == 'лучший') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()} 🐁 COME QUESO 🧀*_
+_*${text.toUpperCase()}* *НЕТ Я ЛУЧШИ ТЕБЯ 😂😂 НА* *${(500).getRandom()}%* *ПОДТВЕРЖДЕННО*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}
-if (command == 'prostituto') {
+if (command == 'якрасивая') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()} 🫦👅, QUIEN QUIERE DE SUS SERVICIOS? XD*_
+_*${text.toUpperCase()}* *ТЫ АФИГЕННАЯ НА* *${(500).getRandom()}%* *ПОДТВЕРЖДЕННО*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}
-if (command == 'prostituta') {
+if (command == 'хитрый') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()} 🫦👅, QUIEN QUIERE DE SUS SERVICIOS? XD*_
+_*${text.toUpperCase()}* *ТЫ ХИТРЕЙ МЕНЯ НА* *${(500).getRandom()}%* *ПОДТВЕРЖДЕННО*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}         
 }
 handler.help = ['gay2', 'lesbiana', 'pajero', 'pajera', 'puto', 'puta', 'manco', 'manca', 'rata', 'prostituta', 'prostituto'].map(v => v + ' @tag | nombre')
 handler.tags = ['calculator']
-handler.command = /^gay2|lesbiana|pajero|pajera|puto|puta|manco|manca|rata|prostituta|prostituto/i
+handler.command = /^дурак|умный|любит|дура|любит1|правда|какашка|русский|лучший|якрасивая|хитрый/i
 handler.register = true
 export default handler

@@ -5,15 +5,11 @@ let a = ps.getRandom()
 let b
 do b = ps.getRandom()
 while (b === a)
-m.reply(`*${toM(a)}, 𝙳𝙴𝙱𝙴𝚁𝙸𝙰𝚂 𝙲𝙰𝚂𝙰𝚁𝚃𝙴 💍 𝙲𝙾𝙽 ${toM(b)}, 𝙷𝙰𝙲𝙴𝙽 𝚄𝙽𝙰 𝙱𝚄𝙴𝙽𝙰 𝙿𝙰𝚁𝙴𝙹𝙰 💓*
-
-
-*${toM(a)}, YOU SHOULD GET MARRIED💍WITH  ${toM(b)}, THEY MAKE A GOOD COUPLE 💓*`, null, {
+m.reply(`*${toM(a)}, ТЫ ДОЛЖЕН ЖЕНИТЬСЯ 💍 НА НЕЙ ${toM(b)}, ЗДЕЛАЙ ЕЙ ПРЕДЛОЖЕНИЯ 💓*`, null, {
 mentions: [a, b]
 })}
 handler.help = ['formarpareja']
 handler.tags = ['main', 'fun']
-handler.command = ['formarpareja','formarparejas']
+handler.command = ['свадьба','formarparejas']
 handler.group = true
-handler.register = true
 export default handler
