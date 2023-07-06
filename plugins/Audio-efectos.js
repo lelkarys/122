@@ -31,7 +31,7 @@ conn.sendFile(m.chat, buff, ran, null, m, true, {
 type: 'audioMessage', 
 ptt: true 
 })})
-} else throw `*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙰 𝙰𝙻 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉 𝙴𝙻 𝙲𝚄𝙰𝙻 𝚂𝙴𝚁𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙳𝙾, 𝚄𝚂𝙰𝙳𝙾 𝙴𝙻 𝙲𝙾𝙰𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command}*\n\n\n*[❗𝐈𝐍𝐅𝐎❗] RESPOND TO THE AUDIO OR VOICE NOTE WHICH OF WHICH WILL BE MODIFIED TO WHICH, USING THE ${usedPrefix + command}*`
+} else throw `*[❗ИНФО❗] Отвечайте на звуковую или голосовую заметку, которая будет изменена, используя команду ${usedPrefix + command}${usedPrefix + command}*`
 } catch (e) {
 throw e
 }}

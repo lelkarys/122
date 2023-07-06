@@ -8,22 +8,22 @@ if (isBotAdmin && chat.antiArab) {
 		
 if (m.sender.startsWith('212' || '212')) {
 global.db.data.users[m.sender].banned = true
-m.reply(`*[❗]ʜᴏʟᴀ ᴛᴇ ɪɴғᴏʀᴍᴏ 🌴ǫᴜᴇ ᴇsᴛᴀ ᴘʀᴏʜɪʙɪᴅᴏ ɴᴜᴍᴇʀᴏs ᴠɪʀᴛᴜᴀʟᴇs ᴇɴ ᴇsᴛᴇ ɢʀᴜᴘᴏ🍀*\n\n\n*[❗] HELLO I INFORM YOU 🌴THAT VIRTUAL NUMBERS ARE PROHIBITED IN THIS GROUP 🍀*`)
+m.reply(`*[❗] ЗДРАВСТВУЙТЕ, СООБЩАЮ ВАМ, ЧТО ВИРТУАЛЬНЫЕ НОМЕРА В ЭТОЙ ГРУППЕ ЗАПРЕЩЕНЫ 🍀*`)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
    
 if (m.sender.startsWith('265' || '265')) {
 global.db.data.users[m.sender].banned = true
-m.reply(`*[❗]ʜᴏʟᴀ ᴛᴇ ɪɴғᴏʀᴍᴏ 🌴ǫᴜᴇ ᴇsᴛᴀ ᴘʀᴏʜɪʙɪᴅᴏ ɴᴜᴍᴇʀᴏs ᴠɪʀᴛᴜᴀʟᴇs ᴇɴ ᴇsᴛᴇ ɢʀᴜᴘᴏ🍀*\n\n\n*[❗] HELLO I INFORM YOU 🌴THAT VIRTUAL NUMBERS ARE PROHIBITED IN THIS GROUP 🍀*`)
+m.reply(`*[❗] ЗДРАВСТВУЙТЕ, СООБЩАЮ ВАМ, ЧТО ВИРТУАЛЬНЫЕ НОМЕРА В ЭТОЙ ГРУППЕ ЗАПРЕЩЕНЫ  🍀*`)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 
 
 if (m.sender.startsWith('972' || '972')) {
 global.db.data.users[m.sender].banned = true
-m.reply(`*[❗]ʜᴏʟᴀ ᴛᴇ ɪɴғᴏʀᴍᴏ 🌴ǫᴜᴇ ᴇsᴛᴀ ᴘʀᴏʜɪʙɪᴅᴏ ɴᴜᴍᴇʀᴏs ᴠɪʀᴛᴜᴀʟᴇs ᴇɴ ᴇsᴛᴇ ɢʀᴜᴘᴏ🍀*\n\n\n*[❗] HELLO I INFORM YOU 🌴THAT VIRTUAL NUMBERS ARE PROHIBITED IN THIS GROUP 🍀*`)
+m.reply(`*[❗] ЗДРАВСТВУЙТЕ, СООБЩАЮ ВАМ, ЧТО ВИРТУАЛЬНЫЕ НОМЕРА В ЭТОЙ ГРУППЕ ЗАПРЕЩЕНЫ 🍀*`)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 
    
 if (m.sender.startsWith('994' || '994')) {
 global.db.data.users[m.sender].banned = true
-m.reply(`*[❗]ʜᴏʟᴀ ᴛᴇ ɪɴғᴏʀᴍᴏ 🌴ǫᴜᴇ ᴇsᴛᴀ ᴘʀᴏʜɪʙɪᴅᴏ ɴᴜᴍᴇʀᴏs ᴠɪʀᴛᴜᴀʟᴇs ᴇɴ ᴇsᴛᴇ ɢʀᴜᴘᴏ🍀*\n\n\n*[❗] HELLO I INFORM YOU 🌴THAT VIRTUAL NUMBERS ARE PROHIBITED IN THIS GROUP 🍀*`)
+m.reply(`*[❗] ЗДРАВСТВУЙТЕ, СООБЩАЮ ВАМ, ЧТО ВИРТУАЛЬНЫЕ НОМЕРА В ЭТОЙ ГРУППЕ ЗАПРЕЩЕНЫ  🍀*`)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}    
    
 }}

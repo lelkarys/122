@@ -1,7 +1,7 @@
 let handler = m => m
 
 handler.all = async function (m, { isBotAdmin }) {
-// auto clear ketika terdapat pesan yang tidak dapat dilihat di wa desktop
+// автоматическая очистка при наличии сообщений, которые невозможно просмотреть на рабочем столе wa
 if (m.messageStubType === 68) {
 let log = {
 key: m.key,
