@@ -27,6 +27,6 @@ let buttonMessage= {
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
-handler.command = ['sc','script']
+handler.command = ['лгнпмормпдлдлелгеаглеа']
 handler.register = true
 export default handler

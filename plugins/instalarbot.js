@@ -33,24 +33,6 @@ let str = `╭「➻❥𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰➻
 │➯ *INSTALACIÓN*
 ╰───────────────╯
 🍁᭢━━━━━━━━━᭥🍁᭢
-╭「➻❥ *APK-TERMUX* ➻❥」
-│➯ https://www.mediafire.com
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭「➻❥Número para ayuda➻❥」
-│➯Wa.me/79531126750
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭「➻❥ *📽️tutorial* ➻❥」
-│➯https://youtu.be/AtI8nyBWrZk
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭「➻❥𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚃𝙴𝚁𝙼𝚄𝚇➻❥」
-│➯opción 1 estos comandos son para los que no pudieron hacer con los comandos normales estos comandos lo van a instalar solito 
-│➯termux-setup-storage
-│➯pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget && pkg install yarn
-│➯wget -O - https://raw.githubusercontent.com/OFC-YOVANI/HADES-BOT-OMEGA/master/install.sh | bash
-╰───────────────╯
 `.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
