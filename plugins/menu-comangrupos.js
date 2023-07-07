@@ -19,24 +19,19 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let str = `╭「➻❥𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰➻❥」
+let str = `╭「➻❥КОМАНДЫ ВАНИЛЬКИ➻❥」
 │➯ *Привет,➟${taguser}
-│➯ *ᴏᴡɴᴇʀ:ᴏғᴄ➟ʏᴏᴠᴀɴɪ
-│➯ *Número*➟79531126750
-│➯ *canal-YouTube*
-│➯ *https://youtube.com/@hades_bot2391
-│➯ *ғᴇᴄʜᴀ:➟${date}
-│➯ *ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:➟${uptime}
-│➯ *ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}
+│➯ *Мой➟ Создатель
+│➯ *Лёлька*➟77072763560
+│➯ *Время работы:➟${uptime}
 ︎╰───────────────╯
 🍁᭢━━━━━━━━━᭥🍁᭢
 ╭「➻❥ *Активаровать* ➻❥」
-│➯ ღ꧁ *КОМАНДЫ ВАНИЛЬКИ* ꧂ღ
 │➯>>>>>>>>>>>>>>>>>>>>>>
 │➯💟 #включить /выключить приветствие 
 │➯💟 #группу закрыть/открыть
 │➯💟 #включить/выключить антиссылка
-│➯💟 # включить /выключить антиссылка2 
+│➯💟 #включить /выключить антиссылка2 
 │➯💟 #добавить @
 │➯💟 #снести @/или выделить сообщение
 │➯💟 #внимание 
