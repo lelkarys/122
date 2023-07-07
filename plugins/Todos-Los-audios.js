@@ -7,28 +7,28 @@ let vn = './Audios/Hola.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}   
 
-if (!chat.isBanned && chat.audios && m.text.match(/(anadieleimporta|a nadie le importa)/gi)) {
-let vn = './Audios/dylan1.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(люблю|Люблю)/gi)) {
+let vn = './Audios/люблю.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(araara|ara ara)/gi)) {    
-let vn = './Audios/Ara.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(мечтаю|Мечтаю)/gi)) {    
+let vn = './Audios/мечта.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(miarda de bot|mierda de bot|mearda de bot|Miarda de Bot|Mierda de Bot|Mearda de Bot)/gi)) {    
-let vn = './Audios/insultar.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(правила|Правила)/gi)) {    
+let vn = './Audios/правила.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}    
     
-if (!chat.isBanned && chat.audios && m.text.match(/(bañate|Bañate)/gi)) {    
-let vn = './Audios/Banate.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(привет|Привет)/gi)) {    
+let vn = './Audios/привет.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}    
     
-if (!chat.isBanned && chat.audios && m.text.match(/(baneado|Baneado)/gi)) {    
-let vn = './Audios/baneado.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(спать|Спать)/gi)) {    
+let vn = './Audios/спать.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}   
    
