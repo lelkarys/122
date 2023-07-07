@@ -17,7 +17,7 @@ additionalText = 'video 🎥'}
 let texto1 = ` ༴⃟🌹๋ོ࣭ꦿ⁩PLAY-YouTube--⦿
 `.trim()
 conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1 }, { quoted: m })
-if (command == 'play') {
+if (command == 'плей') {
 try {
 let q = '128kbps'
 let v = yt_play[0].url
@@ -72,7 +72,7 @@ throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅
 }
 handler.help = ["play", "play2"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
-handler.command = /^play2?$/i
+handler.command = /^плей2?$/i
 handler.register = true
 handler.limit = 4
 export default handler
