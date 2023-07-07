@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import axios from 'axios'
 import { load } from 'cheerio'
 let handler = async (m, {text, usedPrefix, command, conn}) => {
-if (!text) throw '*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙰 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙰𝙻𝙶𝚄𝙽𝙰 𝙿𝙴𝙻𝙸𝙲𝚄𝙻𝙰 𝙰 𝙱𝚄𝚂𝙲𝙰𝚁*'   
+if (!text) throw '*[❗] Вставьте название какого-нибудь фильма, который нужно посмотреть*'   
 let aaaa
 let img
 try {   
@@ -12,7 +12,7 @@ img = 'https://cinefilosoficial.com/wp-content/uploads/2021/07/cuevana.jpg'
 aaaa = await searchP(text)    
 img = 'https://elcomercio.pe/resizer/RJM30xnujgfmaODGytH1rRVOrAA=/400x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/BJ2L67XNRRGHTFPKPDOEQ2AH5Y.jpg'    
 }    
-if (aaaa == '') throw '*[❗] 𝙽𝙾 𝚂𝙴 𝙴𝙽𝙲𝙾𝙽𝚃𝚁𝙾 𝙽𝙸𝙽𝙶𝚄𝙽𝙰 𝙿𝙴𝙻𝙸𝙲𝚄𝙻𝙰*' 
+if (aaaa == '') throw '*[❗] Не было найдено ни одного фильма*' 
 let res = await aaaa.map((v) => `*🎬 • Nombre:* ${v.title}\n*🍿 • Url:* ${v.link}`).join`\n\n───────────────\n\n`
 let ads = '*💫 • Рекомендуемый блокировщик рекламы: *Заблокируйте это\n*⛨ • Link:* https://block-this.com/block-this-latest.apk\n\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣\n\n'
 conn.sendMessage(m.chat, { image: { url: img }, caption: ads + res }, {quoted: m})

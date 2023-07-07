@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 conn.tekateki = conn.tekateki ? conn.tekateki : {}
 let id = m.chat
 if (id in conn.tekateki) {
-conn.reply(m.chat, 'Todavía hay acertijos sin responder en este chat\n There are still unanswered riddles in this chat', conn.tekateki[id][0])
+conn.reply(m.chat, 'В этом чате все еще есть загадки без ответов', conn.tekateki[id][0])
 throw false
 }
 let tekateki = JSON.parse(fs.readFileSync(`./lib/acertijo.json`))

@@ -4,35 +4,24 @@ let handler = async (m, { conn, isAdmin, isOwner, args, usedPrefix, command }) =
           throw false
   }
   let isClose = {
-	  'open': 'not_announcement',
+	  'открыть': 'not_announcement',
 	  'buka': 'not_announcement',
       'on': 'not_announcement',
 	  '1': 'not_announcement',
-	  'close': 'announcement',
+	  'закрыть': 'announcement',
 	  'tutup': 'announcement',
       'off': 'announcement',
       '0': 'announcement',
   }[(args[0] || '')]
   if (isClose === undefined) {
 	  let caption = `------------------------------------------------------------------------------------------------------------
-𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰
+Бот
 *[❗] 𝙵𝙾𝚁𝙼𝙰𝚃𝙾 𝙴𝚁𝚁𝙾𝙽𝙴𝙾!!*
 ✨𝙴𝙹𝙴𝙼𝙿𝙻𝙾✨ 
 ${usedPrefix + command} open 1*
 ${usedPrefix + command} close 1*
-📌 *_Ejemplo de uso:_* *${usedPrefix + command} close 1*
-*_🌿 Para que el grupo este cerrado una hora._*
-
-------------------------------------------------------------------------------------------------------------
-
-𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰
-*[❗]WRONG FORMAT!!*
-*✨EXAMPLE✨*
-${usedPrefix + command} open 1*
-${usedPrefix + command} close 1*
-📌 *_Use example:_* *${usedPrefix + command} close 1*
-*_🌿 For the group to be closed on time._*
-
+📌 *_Пример использования:_* *${usedPrefix + command} закрыть 1*
+*_🌿 Чтобы группа была закрыта на час._*
 ------------------------------------------------------------------------------------------------------------`
       m.reply(caption)
 	  throw false
@@ -49,9 +38,9 @@ ${usedPrefix + command} close 1*
         }, timeoutset)
   }
   }
-handler.help = ['grouptime *<open/close>* *<número>*']
+handler.help = ['группу *<открыть/закрыть>* *<número>*']
 handler.tags = ['group']
-handler.command = /^(grouptime|gctime)$/i
+handler.command = /^(группы|gctime)$/i
 
 handler.botAdmin = true
 handler.group = true 

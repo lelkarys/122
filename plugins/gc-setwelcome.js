@@ -1,12 +1,12 @@
 let handler = async (m, { conn, text, isROwner, isOwner }) => {
 if (text) {
 global.db.data.chats[m.chat].sWelcome = text
-m.reply('*[❗] 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝙳𝙴 𝙱𝙸𝙽𝚅𝙴𝙽𝙸𝙳𝙰 𝙲𝙾𝙽𝙵𝙸𝙶𝚄𝚁𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙿𝙰𝚁𝙰 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾*\n\n\n*[❗] WELCOME MESSAGE SUCCESSFULLY CONFIGURED FOR THIS GROUP*')
-} else throw `*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝙳𝙴 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙰 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙴 𝙰𝙶𝚁𝙴𝙶𝙰𝚁, 𝚄𝚂𝙴:*\n*- @user (mención)*\n*- @group (nombre de grupo)*\n*- @desc (description de grupo)*\n\n\n*[❗] ENTER THE WELCOME MESSAGE YOU WANT TO ADD TO THIS:*\n*- @user (mention)*\n*- @group (group name)*\n*- @desc (group description)*`
+m.reply('*[❗] ПРИВЕТСТВЕННОЕ СООБЩЕНИЕ УСПЕШНО НАСТРОЕНО ДЛЯ ЭТОЙ ГРУППЫ*')
+} else throw `*[❗] ВВЕДИТЕ ПРИВЕТСТВЕННОЕ СООБЩЕНИЕ, КОТОРОЕ ВЫ ХОТИТЕ ДОБАВИТЬ К ЭТОМУ:*\n*- @user (упоминать)*\n*- @group (название группы)*\n*- @desc (описание группы)*`
 }
 handler.help = ['setwelcome <text>']
 handler.tags = ['group']
-handler.command = ['setwelcome'] 
+handler.command = ['приветствие'] 
 handler.admin = true
 handler.register = true
 export default handler
