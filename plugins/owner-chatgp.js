@@ -4,21 +4,21 @@ let handler = async (m, { conn, text, groupMetadata }) => {
 if (m.isBaileys && m.fromMe)
 return !0
 if (!m.isGroup) return !1
-if (!text) throw '*_⚠ • ️Ingrese un -texto- para enviar un mensaje a todos los grupos._*'
+if (!text) throw '*_⚠ • ️Введите - текст -, чтобы отправить сообщение всем группам._*'
 const linkThisGroup = `${link}`
-if (m.text.includes(linkThisGroup)) return conn.reply(m.chat, '❌ *_No puedes espamear enlaces a otros grupos._*', m)
+if (m.text.includes(linkThisGroup)) return conn.reply(m.chat, '❌ *_Вы не можете рассылать спам-ссылки на другие группы._*', m)
 let time = global.db.data.users[m.sender].msgwait + 300000
-if (new Date - db.data.users[m.sender].msgwait < 300000) throw `*_⚠️ • Tienes que esperar ${msToTime(time - new Date())} para volver a enviar un mensaje._*`
+if (new Date - db.data.users[m.sender].msgwait < 300000) throw `*_⚠️ • Tienes que esperar ${msToTime(time - new Date())} чтобы повторно отправить сообщение._*`
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let name = await conn.getName(m.sender)
 let groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats && !chat.metadata?.read_only && !chat.metadata?.announce).map(v => v[0])
 let fakegif = { key: {participant: `0@s.whatsapp.net`, ...("79531126750-79531126750@g.us" ? { remoteJid: "79531126750-79531126750@g.us" } : {})},message: {"videoMessage": { "title": '⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍', "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': '⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍', 'jpegThumbnail': false }}}
-let teks = `*🌺 • 𝙶𝚛𝚞𝚙𝚘:* ${groupMetadata.subject}\n*🍀 • 𝙳𝚎:* ${name}\n*🍁 • 𝙽𝚞́𝚖𝚎𝚛𝚘:* wa.me/${who.split`@`[0]}\n*📧 • 𝙼𝚎𝚗𝚜𝚊𝚓𝚎:* ${text}`
+let teks = `*🌺 • Группа:* ${groupMetadata.subject}\n*🍀 • 𝙳𝚎:* ${name}\n*🍁 • 𝙽𝚞́𝚖𝚎𝚛𝚘:* wa.me/${who.split`@`[0]}\n*📧 • 𝙼𝚎𝚗𝚜𝚊𝚓𝚎:* ${text}`
 for (let id of groups) {
 await conn.sendMessage(id, { text: teks }, { quoted: fakegif })
 global.db.data.users[m.sender].msgwait = new Date * 1
 }}
-handler.command = /^(msg)$/i
+handler.command = /^(всегруппы)$/i
 handler.owner = true
 handler.group = true
 handler.register = true
