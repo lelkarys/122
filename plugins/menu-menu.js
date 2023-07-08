@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
 try {
-let pp  = './views/Menu(2).jpg'
+let pp = imagen2
 //let vn = './Plugins/Audios/menu.mp3'
 let img = await(await fetch('https://klike.net/uploads/posts/2023-02/1675590147_3-41.jpg')).buffer()
 let d = new Date(new Date + 3600000)
