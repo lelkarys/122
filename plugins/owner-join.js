@@ -16,7 +16,7 @@ for (let jid of data.map(([id]) => [id] + '@s.whatsapp.net').filter(v => v != co
 await m.reply('*[[❗𝐈𝐍𝐅𝐎❗] SE HA MANDADO LA SOLICITUD AL PROPIETARIO DEL BOT TAMBIÉN PUEDES CONTACTAR A LOS SUBBOTS Y PUEDES PEDIRLES DE LA MANERA MÁS AMABLE QUE SE UNAN A TU GRUPO\n LO ÚNICO QUE LES PEDIMOS ES QUE NO LE HAGAN SPAM Y NO LE HAGAN UN MAL USO AL BOT\n Y NO LO AGREGUEN SIN CONSENTIMIENTO DEL PROPIETARIO PARA NO TENER PROBLEMAS\n GRACIAS POR SU PREFERENCIA😉*\n\n\n*[❗𝐈𝐍𝐅𝐎❗] THE REQUEST HAS BEEN SENT TO THE BOT OWNER YOU CAN ALSO CONTACT THE SUBBOTS AND YOU CAN ASK THEM IN THE KINDEST WAY TO JOIN YOUR GROUP\n THE ONLY THING WE ASK OF THEM IS THAT😉*')}}
 handler.help = ['join [chat.whatsapp.com]']
 handler.tags = ['premium']
-handler.command = /^join|новаягруппа$/i
+handler.command = /^новаягруппа$/i
 handler.register = true
 handler.limit = 2
 export default handler
