@@ -29,36 +29,6 @@ let str = `╭「➻❥𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰➻
 │➯ *ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}
 ︎╰───────────────╯
 🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Estadísticas* ➻❥」
-│➯ *✳️️Nivel:* ${level}
-│➯ *🧿Experiencia:* ${exp}
-│➯ *⚓Rango:* ${role}
-│➯ *💎Diamantes:* ${limit}
-│➯ *👾Hades-Coins:* ${money}
-│➯ *🪙Tokens:* ${joincount}
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *gana y compara* ➻❥」
-│➯ *.minar gana xp*
-│➯ *.minar2 gana Diamantes*
-│➯ *.minar3 gana Hades-Coins*
-│➯ *.claim reclama tu recompensa diaria exp*
-│➯ *.darxp recompensa diaria exp*
-│➯ *.coffer un cofre de recompensas diarias*
-│➯ *para ver tus diamantes usa el comando*
-│➯ *.bal*
-│➯ *puedes comprar diamantes usando los comandos* 
-│➯ *.bus <cantidad>* 
-│➯ *.busyall te cobra Hades-Coins*
-│➯ *.bur <cantidad>*
-│➯ *.buryall te cobra Tokens*
-│➯ *.buy <cantidad>*
-│➯ *.buyall te cobra experiencia*
-│➯ *puedes dar diamantes o experiencia a otra persona con los comandos* 
-│➯ *.transfer limit mas <cantidad>*
-│➯ *.transfer exp mas <cantidad>*
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
 ╭─「➻❥ *Для админов* ➻❥」
 │➯ *.приветствие*
 │➯ *.прощание*
@@ -111,80 +81,7 @@ let str = `╭「➻❥𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰➻
 │➯ *.якрасивая @номер*
 │➯ *.хитрый @номер*
 │➯ *.комплимент*
-
-
-│➯ *.filtroanime*
-│➯ *.filtrodibujo*
-│➯ *.pixelar*
-│➯ *.Itssostupid*
-│➯ *.difuminar2*
-│➯ *.sticker*
-│➯ *.wm paquete | nombre*
-│➯ *.removebg*
-│➯ *.toimg*
-│➯ *.tovn*
-│➯ *.tomp3*
-│➯ *.afk*
-│➯ *.tomp4* 
-│➯ *.togifaud*
-│➯ *.tovideo*
-│➯ *.attp3*
-│➯ *.ttp*
-│➯ *.ttp2*
-│➯ *.wpmontaña*
-│➯ *.wpgaming*
-│➯ *.doraemon*
-│➯ *.wpaesthetic*
-│➯ *.planeta*
-│➯ *.technology*
-│➯ *.ciberespacio*
-│➯ *.caricatura*
-│➯ *.pubg*
-│➯ *.wprandom*
-│➯ *.ttp3*
-│➯ *.ttp5*
-│➯ *.styletext* 
 ︎╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Logos* ➻❥」
-│➯ *.blackpink <texto>*
-│➯ *.bloodfrosted <texto>*
-│➯ *.bokelog <texto>*
-│➯ *.box3d <texto>*
-│➯ *.breakwall  <texto>*
-│➯ *.cloud <texto>*
-│➯ *.deluxesilver <texto>*
-│➯ *.futureneon <texto>*
-│➯ *.halloween <texto>*
-│➯ *.icecold <texto>*
-│➯ *.impressiveglitch <texto>*
-│➯ *.jokerlogo <texto>*
-│➯ *.logolol <texto>*
-│➯ *.luxurylog <texto>*
-│➯ *.holographic <texto>*
-│➯ *.magma <texto>*
-│➯ *.metaldark <texto>*
-│➯ *.minion <texto>*
-│➯ *.natureleaves <texto>*
-│➯ *.neon <texto>*
-│➯ *.neonlight <texto>*
-│➯ *.newyearcard <texto>*
-│➯ *.roadwarning <texto>*
-│➯ *.sandengraved <texto>*
-│➯ *.sandsummer <texto>*
-│➯ *.sparkle <texto>*
-│➯ *.strawberry <texto>*
-│➯ *.text1917 <texto>*
-│➯ *.thunder <texto>*
-│➯ *.toxic <texto>*
-│➯ *.watercolor <texto>*
-│➯ *.wonderfulgraffiti <texto>*
-╰───────────────╯
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「➻❥ *Jadibot* ➻❥」
-│➯ *.serbot*
-│➯ *.stop borra tu sesión antigua*
-╰───────────────╯
 🍁᭢━━━━━━━━━᭥🍁᭢
 ╭─「➻❥ *Команды для создателя* ➻❥」
 │➯ *.автоадмин*
@@ -192,17 +89,11 @@ let str = `╭「➻❥𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰➻
 │➯ *.бан @номер*
 │➯ *.банлист*
 │➯ *.разблокировать*
-│➯ *.hesoyam*
 │➯ *.списокблок*
-│➯ *.join*
-│➯ *.salir*
+│➯ *.выйти*
 │➯ *.удалитьпрем*
-│➯ *.unblocklist*
-│➯ *.setppbot*
-│➯ *.robargp*
-│➯ *.banuser*
-│➯ *.setprefix*
-│➯ *.resetprefix*
+│➯ *.разбанчат*
+│➯ *.удалитьбан @номер*
 │➯ *.обьявление*
 │➯ *.обьявление2*
 ╰───────────────╯`.trim()
