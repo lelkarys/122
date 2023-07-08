@@ -17,7 +17,7 @@ if (/найткор/.test(command)) set = '-filter:a atempo=1.06,asetrate=44100*
 if (/обратный/.test(command)) set = '-filter_complex "areverse"'
 if (/робот/.test(command)) set = '-filter_complex "afftfilt=real=\'hypot(re,im)*sin(0)\':imag=\'hypot(re,im)*cos(0)\':win_size=512:overlap=0.75"'
 if (/медленный/.test(command)) set = '-filter:a "atempo=0.7,asetrate=44100"'
-if (/smooth/.test(command)) set = '-filter:v "minterpolate=\'mi_mode=mci:mc_mode=aobmc:vsbmc=1:fps=120\'"'
+if (/гладкий/.test(command)) set = '-filter:v "minterpolate=\'mi_mode=mci:mc_mode=aobmc:vsbmc=1:fps=120\'"'
 if (/tupai|squirrel|chipmunk/.test(command)) set = '-filter:a "atempo=0.5,asetrate=65100"'
 if (/audio/.test(mime)) {
 let ran = getRandom('.mp3')
@@ -37,7 +37,7 @@ throw e
 }}
 handler.help = ['bass', 'blown', 'deep', 'earrape', 'fast', 'fat', 'nightcore', 'reverse', 'robot', 'slow', 'smooth', 'tupai'].map(v => v + ' [vn]')
 handler.tags = ['audio']
-handler.command = /^(басс|взорван|глубокий|раковина|быстрый|найткор|обратный|робот|медленный|smooth|tupai|squirrel|chipmunk)$/i
+handler.command = /^(басс|взорван|глубокий|раковина|быстрый|найткор|обратный|робот|медленный|гладкий|tupai|squirrel|chipmunk)$/i
 handler.register = true
 export default handler
 
