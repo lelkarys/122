@@ -203,8 +203,8 @@ let str = `╭「➻❥𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰➻
 │➯ *.banuser*
 │➯ *.setprefix*
 │➯ *.resetprefix*
-│➯ *.unbanuser*
 │➯ *.обьявление*
+│➯ *.обьявление2*
 ╰───────────────╯`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'Darling.mp3', null, m, true, { type: 'audioMessage', ptt: true})
