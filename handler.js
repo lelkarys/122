@@ -1473,19 +1473,19 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*\n\n\n*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] *THIS COMMAND CAN ONLY DO UPDATED BY* *EL,* */THE OWNER/A* *(OWNER) OF THE BOT*',
-        owner: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*\n\n\n*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] *THIS COMMAND CAN ONLY DO UPDATED BY* *EL,* */THE OWNER/A* *(OWNER) OF THE BOT*',
-        mods: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙼𝙾𝙳𝙴𝚁𝙰𝙳𝙾𝚁𝙴𝚂 𝚈 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*\n\n\n*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] *THIS COMMAND CAN ONLY DO UPDATED BY* *EL,* */THE OWNER/A* *(OWNER) OF THE BOT*',
-        premium: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂 𝙿𝚁𝙴𝙼𝙸𝚄𝙼 𝚈 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*\n\n\n[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ]*THIS WHEN CAN BE USED BY PERMIUM USERS AND THE OWNER OF THE BOT*',
-        group: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙴𝙽 𝙶𝚁𝚄𝙿𝙾𝚂*\n\n\n[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ]*THIS COMMAND CAN ONLY BE USED IN GROUPS*',
-        private: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙴𝙽 𝙲𝙷𝙰𝚃 𝙿𝚁𝙸𝚅𝙰𝙳𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*\n\n\n[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ]*THIS COMMAND CAN ONLY BE USED IN A PRIVATE BOT CHAT*',
-        admin: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙰𝙳𝙼𝙸𝙽𝚂 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n\n\n[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ]*THIS COMMAND CAN BE USED BY GROUP ADMINS*',
-        botAdmin: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙿𝙰𝚁𝙰 𝙿𝙾𝙳𝙴𝚁 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂 𝙽𝙴𝙲𝙴𝚂𝙰𝚁𝙸𝙾 𝚀𝚄𝙴 𝙴𝙻 𝙱𝙾𝚃 𝚂𝙴𝙰 𝙰𝙳𝙼𝙸𝙽, 𝙰𝙲𝙴𝙽𝙳𝙴𝚁 𝙰 𝙰𝙳𝙼𝙸𝙽 𝙴𝚂𝚃𝙴 𝙽𝚄𝙼𝙴𝚁𝙾*\n\n\n[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ]*TO BE ABLE TO USE THIS COMMAND, THE BOT NEEDS TO BE AN ADMIN, PROMOTE THIS NUMBER TO ADMIN*',
+        rowner: '*[ ⚠️ ВНИМАНИЕ ⚠️ ] *ЭТУ КОМАНДУ МОЖЕТ ВЫПОЛНИТЬ ТОЛЬКО ОБНОВЛЕННЫЙ* *(СОЗДАТЕЛЬ) БОТА*',
+        owner: '*[ ⚠️ ВНИМАНИЕ ⚠️ ] *ЭТУ КОМАНДУ МОЖЕТ ВЫПОЛНИТЬ ТОЛЬКО ОБНОВЛЕННЫЙ* *(СОЗДАТЕЛЬ) БОТА*',
+        mods: '*[ ⚠️ ВНИМАНИЕ ⚠️ ] *ЭТУ КОМАНДУ МОЖЕТ ВЫПОЛНИТЬ ТОЛЬКО ОБНОВЛЕННЫЙ* *(СОЗДАТЕЛЬ) БОТА*',
+        premium: '*[ ⚠️ ВНИМАНИЕ ⚠️ ]*ЭТО ПРИЛОЖЕНИЕ МОЖЕТ БЫТЬ ИСПОЛЬЗОВАНО ПРЕМИУМ-ПОЛЬЗОВАТЕЛЯМИ И ВЛАДЕЛЬЦЕМ БОТА*',
+        group: '*[ ⚠️ ВНИМАНИЕ ⚠️ ]*ЭТА КОМАНДА МОЖЕТ ИСПОЛЬЗОВАТЬСЯ ТОЛЬКО В ГРУППАХ*',
+        private: '*[ ⚠️ ВНИМАНИЕ ⚠️ ]*ЭТУ КОМАНДУ МОЖНО ИСПОЛЬЗОВАТЬ ТОЛЬКО В ПРИВАТНОМ ЧАТЕ БОТА*',
+        admin: '*[ ⚠️ ВНИМАНИЕ ⚠️ ]*ЭТА КОМАНДА МОЖЕТ БЫТЬ ИСПОЛЬЗОВАНА АДМИНИСТРАТОРАМИ ГРУПП*',
+        botAdmin: '*[ ⚠️ ВНИМАНИЕ ⚠️ ]*ЧТОБЫ ИМЕТЬ ВОЗМОЖНОСТЬ ИСПОЛЬЗОВАТЬ ЭТУ КОМАНДУ, БОТ ДОЛЖЕН БЫТЬ АДМИНИСТРАТОРОМ, ПРИСВОИТЕ ЭТОМУ НОМЕРУ СТАТУС АДМИНИСТРАТОРА*',
         unreg: '*[ 🛑 *ПРИВЕТ, ТЫ НЕ ЗАРЕГИСТРИРОВАН* 🛑 ]* *ЧТОБЫ ИСПОЛЬЗОВАТЬ ЭТУ КОМАНДУ, ТЫ ДОЛЖЕН ЗАРЕГИСТРИРОВАТЬСЯ С ПОМОЩЬЮ КОМАНДЫ\n/рег Имя.возрост*',
-        restrict: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂𝚃𝙰 𝚁𝙴𝚂𝚃𝚁𝙸𝙽𝙶𝙸𝙳𝙾/𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾 𝙿𝙾𝚁 𝙳𝙴𝚂𝙸𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*\n\n\n[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ]*THIS COMMAND IS REGISTERED/DISABLED BY DECISION OF THE OWNER OF THE BOT*'
+        restrict: '*[ВНИМАНИЕ]*ЭТА КОМАНДА ЗАРЕГИСТРИРОВАНА/ОТКЛЮЧЕНА ПО РЕШЕНИЮ ВЛАДЕЛЬЦА БОТА*'
          }[type]
     let aa = { quoted: m, userJid: conn.user.jid }
-    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: '⫷᭄©Ванилька﹏✍', thumbnail: imagen1, sourceUrl: 'https://github.com/OFC-YOVANI/HADES-OMEGA' }}}}, aa)
+    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] СУПЕР БОТ', body: '⫷᭄©Ванилька﹏✍', thumbnail: imagen1, sourceUrl: 'https://github.com/OFC-YOVANI/HADES-OMEGA' }}}}, aa)
     if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
     //if (msg) return m.reply(msg)
 }
