@@ -21,7 +21,7 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `╭「➻❥Ванилька➻❥」
 │➯𝗛ᴏʟᴀ,➟${taguser}
 │➯ᴏᴡɴᴇʀ:ᴏғᴄ➟ʏᴏᴠᴀɴɪ
-│➯*Número*➟79531126750
+│➯*Número*➟77072763560
 │➯*canal-YouTube*
 │➯https://youtube.com/@hades_bot2391
 │➯ғᴇᴄʜᴀ:➟${date}
