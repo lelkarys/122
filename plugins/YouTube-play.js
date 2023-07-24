@@ -42,7 +42,7 @@ conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + 
 } catch {
 await conn.reply(m.chat, '*[❗]ОШИБКА НЕ УДАЛОСЬ ЗАГРУЗИТЬ АУДИО*', m)}}}
 }  
-if (command == 'play2') {
+if (command == 'плей2') {
 try {
 let qu = '360'
 let q = qu + 'p'
@@ -70,7 +70,7 @@ await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿
 }} catch {
 throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*\n\n\n*[❗]ERROR PLEASE TRY AGAIN"}
 }
-handler.help = ["play", "play2"].map((v) => v + " < busqueda >")
+handler.help = ["плей", "плей2"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
 handler.command = /^плей2?$/i
 handler.register = true
