@@ -17,15 +17,10 @@ additionalText = 'video 🎥'}
 let texto1 = ` ༴⃟🌹๋ོ࣭ꦿ⁩PLAY-DOCYouTube--⦿
 ----------------------------------------------------------------------------------------------------------
 ⇄    ◁   ㅤ  ❚❚ㅤ   ▷ㅤ    ↻
-➯➤͜͡🎶📌*name:* ${yt_play[0].title}
-➯➤📆 *Published:* ${yt_play[0].ago}
-➯➤⌚ *Duration:* ${secondString(yt_play[0].duration.seconds)}
-➯➤👀 *Views:* ${`${MilesNumber(yt_play[0].views)}`}
-➯➤🔗 *Link:* ${yt_play[0].url}
 ▢⫷᭄©Ванилька﹏✍
 ----------------------------------------------------------------------------------------------------------`.trim()
 conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1 }, { quoted: m })
-if (command == 'play3') {
+if (command == 'плей3') {
 try {
 let q = '128kbps'
 let v = yt_play[0].url
@@ -50,7 +45,7 @@ conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + 
 } catch {
 await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾*\n\n\n*[❗]ERROR COULD NOT DOWNLOAD THE AUDIO*', m)}}}
 }  
-if (command == 'play4') {
+if (command == 'плей4') {
 try {
 let qu = '360'
 let q = qu + 'p'
@@ -80,7 +75,7 @@ throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅
 }
 handler.help = ["play3", "play4"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
-handler.command = /^play3|play4?$/i
+handler.command = /^плей3|плей4?$/i
 handler.register = true
 handler.limit = 4
 export default handler
