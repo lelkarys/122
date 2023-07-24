@@ -17,10 +17,15 @@ additionalText = 'video 🎥'}
 let texto1 = ` ༴⃟🌹๋ོ࣭ꦿ⁩PLAY-DOCYouTube--⦿
 ----------------------------------------------------------------------------------------------------------
 ⇄    ◁   ㅤ  ❚❚ㅤ   ▷ㅤ    ↻
-▢⫷᭄©Ванилька﹏✍
+➯➤͜͡🎶📌*name:* ${yt_play[0].title}
+➯➤📆 *Published:* ${yt_play[0].ago}
+➯➤⌚ *Duration:* ${secondString(yt_play[0].duration.seconds)}
+➯➤👀 *Views:* ${`${MilesNumber(yt_play[0].views)}`}
+➯➤🔗 *Link:* ${yt_play[0].url}
+▢⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍
 ----------------------------------------------------------------------------------------------------------`.trim()
 conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1 }, { quoted: m })
-if (command == 'плей3') {
+if (command == 'play3') {
 try {
 let q = '128kbps'
 let v = yt_play[0].url
@@ -43,9 +48,9 @@ let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
 let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
 conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + '.mp3', mimetype: 'audio/mp4' }, { quoted: m })  
 } catch {
-await conn.reply(m.chat, '*[❗]ERROR COULD NOT DOWNLOAD THE AUDIO*', m)}}}
+await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾*\n\n\n*[❗]ERROR COULD NOT DOWNLOAD THE AUDIO*', m)}}}
 }  
-if (command == 'плей4') {
+if (command == 'play4') {
 try {
 let qu = '360'
 let q = qu + 'p'
@@ -54,7 +59,7 @@ const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v)).catch(async
 const dl_url = await yt.video[q].download()
 const ttl = await yt.title
 const size = await yt.video[q].fileSizeH
-await await conn.sendMessage(m.chat, { document: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `▢ 𝚃𝙸𝚃𝚄𝙻𝙾: ${ttl}\n▢ 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾: ${size}\nВанилька`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
+await await conn.sendMessage(m.chat, { document: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `▢ 𝚃𝙸𝚃𝚄𝙻𝙾: ${ttl}\n▢ 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾: ${size}\n𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 } catch {   
 try {  
 let mediaa = await ytMp4(yt_play[0].url)
@@ -75,7 +80,7 @@ throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅
 }
 handler.help = ["play3", "play4"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
-handler.command = /^плей3|плей4?$/i
+handler.command = /^play3|play4?$/i
 handler.register = true
 handler.limit = 4
 export default handler
