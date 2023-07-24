@@ -43,7 +43,7 @@ let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
 let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
 conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + '.mp3', mimetype: 'audio/mp4' }, { quoted: m })  
 } catch {
-await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾*\n\n\n*[❗]ERROR COULD NOT DOWNLOAD THE AUDIO*', m)}}}
+await conn.reply(m.chat, '*[❗]ERROR COULD NOT DOWNLOAD THE AUDIO*', m)}}}
 }  
 if (command == 'плей4') {
 try {
