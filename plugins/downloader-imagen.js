@@ -11,5 +11,4 @@ handler.help = ['gimage <query>', 'imagen <query>']
 handler.tags = ['internet', 'tools']
 handler.command = /^(gimage|image|imagen)$/i
 handler.register = true
-handler.limit = 2
 export default handler
