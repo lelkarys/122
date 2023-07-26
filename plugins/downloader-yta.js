@@ -2,7 +2,7 @@ import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args }) => {
 if (!args[0]) throw '*[❗𝐈𝐍𝐅𝐎❗] Вставьте команду плюс ссылку/ссылку на видео YouTube*'
-await m.reply(`*_⏳Sᴇ ᴇsᴛᴀ ᴘʀᴏᴄᴇsᴀɴᴅᴏ Sᴜ ᴀᴜᴅɪᴏ...⏳`)
+await m.reply(`*_⏳Идет поиск...⏳`)
 await m.reply(`⌛ _Загрузка..._\n▰▰▰▱▱▱▱▱▱`)
 try {
 let q = '128kbps'
