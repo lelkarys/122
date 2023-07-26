@@ -22,7 +22,7 @@ await conn.sendMessage(m.chat, { audio: { url: lolh.result.link }, fileName: `${
 } catch {
 await conn.reply(m.chat, '*[❗] Ошибка Невозможен сбой при расшифровке звука *', m)}
 }}
-handler.command = /^fgmp3|dlmp3|getaud|yt(a|mp3)$/i
+handler.command = /^музыка|dlmp3|getaud|yt(a|mp3)$/i
 handler.limit = 4
 
 export default handler

@@ -2,7 +2,7 @@ import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args }) => {
 if (!args[0]) throw '*[❗𝐈𝐍𝐅𝐎❗] Вставьте команду плюс ссылку/ссылку на видео YouTube*'
-await m.reply(`⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱`)
+await m.reply(`⌛ _загрузка..._\n▰▰▰▱▱▱▱▱▱`)
 try {
 let qu = args[1] || '360'
 let q = qu + 'p'
@@ -24,7 +24,7 @@ await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimet
 } catch {
 await conn.reply(m.chat, '*[❗] Ошибка Невозможен сбой при расшифровке видео*', m)}
 }}
-handler.command = /^fgmp4|dlmp4|getvid|yt(v|mp4)?$/i
+handler.command = /^видео|dlmp4|getvid|yt(v|mp4)?$/i
 handler.limit = 4
 
 export default handler
