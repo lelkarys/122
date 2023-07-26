@@ -3,13 +3,12 @@ var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.present
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `╭─「➻❥ *owner* ➻❥」
 │➯ ⫷᭄©Ванилька﹏✍
-│➯Wa.me/77072763560 (Создатель)
 │➯Wa.me/77072763560 (Создательница)
 ╰───────────────╯`.trim()   
 let buttonMessage= {
 'document': { url: `https://github.com` },
 'mimetype': `application/${document}`,
-'fileName': `⫷᭄ʜᴀᴅᴇs-ʙᴏᴛ-ᴍᴅ﹏✍`,
+'fileName': `「➻❥Ванилька➻❥」`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
