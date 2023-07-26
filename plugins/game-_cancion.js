@@ -20,5 +20,5 @@ return !0
 },
 exp: 0
 }
-handler.register = true
+
 export default handler

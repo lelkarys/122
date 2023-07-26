@@ -12,5 +12,5 @@ handler.help = ['unbanuser']
 handler.tags = ['owner']
 handler.command = /^удалитьбан$/i
 handler.rowner = true
-handler.register = true
+
 export default handler

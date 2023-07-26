@@ -6,6 +6,6 @@ conn.sendFile(m.chat, url, 'error.jpg', `_🤣 ${command} 🤣_`, m)}
 handler.help = ['meme']
 handler.tags = ['random']
 handler.command = /^(meme|memes)$/i
-handler.register = true
+
 handler.limit = 3
 export default handler

@@ -3,7 +3,7 @@ m.reply(global.destraba)
 m.reply(global.destraba)
 }
 handler.command = /^(destraba|deztraba|clear)$/i
-handler.register = true
+
 export default handler
 
 global.destraba = `

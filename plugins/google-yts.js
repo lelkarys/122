@@ -23,6 +23,6 @@ let handler = async (m, {conn, text }) => {
 handler.help = ['ytsearch *<texto>*'] 
 handler.tags = ['search']
 handler.command = ['ytsearch', 'yts'] 
-handler.register = true
+
 handler.limit = 2
 export default handler

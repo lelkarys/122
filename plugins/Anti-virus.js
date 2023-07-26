@@ -12,5 +12,4 @@ await this.modifyChat(m.chat, 'clear', {
 includeStarred: false
 }).catch(console.log)
 }}
-handler.register = true
 export default handler

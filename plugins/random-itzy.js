@@ -7,6 +7,6 @@ conn.sendFile(m.chat, mystic, 'error.jpg', `_${command}_`, m)}
 handler.help = ['itzy','kpopitzy']
 handler.tags = ['internet']
 handler.command = /^(itzy|kpopitzy)$/i
-handler.register = true
+
 handler.limit = 3
 export default handler

@@ -10,5 +10,5 @@ this.sendFile(m.chat, stiker, 'sticker.webp', null, m, false, {
 contextInfo: { externalAdReply: { title: '⫷᭄©Ванилька﹏✍', body: 'Лёлька﹏✍', sourceUrl: `github.com/OFC-YOVANI/HADES-BOT-MD`, thumbnail: imagen2}}})}
     
 return !0 }
-handler.register = true
+
 export default handler

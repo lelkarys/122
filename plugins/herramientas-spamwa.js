@@ -17,5 +17,5 @@ handler.tags = ['General']
 handler.command = /^spam(wa)?$/i
 handler.group = false
 handler.limit = 1
-handler.register = true
+
 export default handler

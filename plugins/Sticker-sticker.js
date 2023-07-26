@@ -44,7 +44,7 @@ else throw '*[❗𝐈𝐍𝐅𝐎❗]ИЗВИНИТЕ, Я ДОПУСТИЛ ОШ�
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
 handler.tags = ['sticker']
 handler.command = /^с(ти?кер)?(gif)?(wm)?$/i
-handler.register = true
+
 handler.limit = 1
 export default handler
 const isUrl = (text) => {

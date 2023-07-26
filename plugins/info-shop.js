@@ -44,5 +44,5 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 handler.command = /^(shop|Shop)$/i
-handler.register = true
+
 export default handler

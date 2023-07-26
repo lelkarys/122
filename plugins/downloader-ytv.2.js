@@ -27,5 +27,5 @@ await conn.reply(m.chat, '*[❗] Ошибка Невозможен сбой пр
 }}
 handler.command = /^ytmp4doc|ytvdoc|ytmp4.2|ytv.2$/i
 handler.limit = 4
-handler.register = true
+
 export default handler

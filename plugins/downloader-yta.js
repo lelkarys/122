@@ -24,5 +24,5 @@ await conn.reply(m.chat, '*[❗] Ошибка Невозможен сбой пр
 }}
 handler.command = /^fgmp3|dlmp3|getaud|yt(a|mp3)$/i
 handler.limit = 4
-handler.register = true
+
 export default handler

@@ -21,7 +21,7 @@ global.db.data.users[m.sender].msgwait = new Date * 1
 handler.command = /^(всегруппы)$/i
 handler.owner = true
 handler.group = true
-handler.register = true
+
 export default handler
 function msToTime(duration) {
 var milliseconds = parseInt((duration % 1000) / 100),

@@ -41,7 +41,7 @@ m.reply(txt)
 } else throw '*[❗𝐈𝐍𝐅𝐎❗] ОТВЕТЬТЕ НА АУДИО ПРИМЕР ОТПРАВЬТЕ АУДИО И ПОМЕТЬТЕ ЕГО КОМАНДОЙ\N /quemusica*\n\n\n*[❗𝐈𝐍𝐅𝐎❗]RESPOND TO AN AUDIO EXAMPLE SEND THE AUDIO AND LABEL IT WITH THE COMMAND*\n */quemusica*'
 }
 handler.command = /^quemusica|quemusicaes|whatmusic$/i
-handler.register = true
+
 handler.limit = 1
 export default handler
 

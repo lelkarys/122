@@ -1371,5 +1371,5 @@ this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt
 
    
 return !0 }
-handler.register = true
+
 export default handler

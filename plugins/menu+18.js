@@ -74,7 +74,7 @@ conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸
 handler.command = /^(меню3|Labiblia|Menuhetai|menuhetai)$/i
 handler.exp = 50
 handler.fail = null
-handler.register = true
+
 export default handler
 function clockString(ms) {
 let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)

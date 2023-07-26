@@ -8,5 +8,5 @@ handler.help = ['update']
 handler.tags = ['owner']
 handler.command = /^обновить|actualizar$/i
 handler.rowner = true
-handler.register = true
+
 export default handler

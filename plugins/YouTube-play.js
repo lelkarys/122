@@ -75,7 +75,7 @@ throw "*[❗𝐈𝐍𝐅𝐎❗] [❗]ОШИБКА, ПОЖАЛУЙСТА, ПОВ
 handler.help = ["плей", "плей2"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
 handler.command = /^плей2?$/i
-handler.register = true
+
 handler.limit = 4
 export default handler
 

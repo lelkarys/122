@@ -28,7 +28,7 @@ m.reply(infoprem, null, { mentions: conn.parseMention(infoprem) })
 handler.help = ['premlist [angka]']
 handler.tags = ['info']
 handler.command = /^(listprem|premlist|listavip|viplista)$/i
-handler.register = true
+
 export default handler
 
 function clockString(ms) {

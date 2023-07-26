@@ -17,7 +17,7 @@ await conn.sendFile(m.chat, result.data, 'Error.jpg', `*𝚃𝙾𝙼𝙰 𝚃�
 handler.help = ['logos']
 handler.tags = ['nulis']
 handler.command = /^(logo|logos)$/i
-handler.register = true
+
 handler.limit = 1
 export default handler
 

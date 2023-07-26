@@ -7,6 +7,6 @@ avatar: await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.p
 handler.help = ['simpcard']
 handler.tags = ['maker']  
 handler.command = /^(simpcard)$/i
-handler.register = true
+
 handler.limit = 1
 export default handler

@@ -26,5 +26,5 @@ await conn.reply(m.chat, '*[❗] Ошибка Невозможен сбой пр
 }}
 handler.command = /^fgmp4|dlmp4|getvid|yt(v|mp4)?$/i
 handler.limit = 4
-handler.register = true
+
 export default handler

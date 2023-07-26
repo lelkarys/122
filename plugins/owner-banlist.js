@@ -15,5 +15,5 @@ let caption = `
 m.reply(caption, null, {mentions: conn.parseMention(caption)})}
 handler.command = /^банлист(ned)?|ban(ned)?list|daftarban(ned)?$/i
 handler.rowner = true
-handler.register = true
+
 export default handler

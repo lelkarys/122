@@ -4,7 +4,7 @@ m.reply(`*╔══════════════════════�
 }
 handler.tags = ['frases']
 handler.command = ['комплимент']
-handler.register = true
+
 export default handler
 
 function pickRandom(list) {

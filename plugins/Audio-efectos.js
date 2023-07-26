@@ -38,7 +38,7 @@ throw e
 handler.help = ['bass', 'blown', 'deep', 'earrape', 'fast', 'fat', 'nightcore', 'reverse', 'robot', 'slow', 'smooth', 'tupai'].map(v => v + ' [vn]')
 handler.tags = ['audio']
 handler.command = /^(басс|взорван|глубокий|раковина|быстрый|найткор|обратный|робот|медленный|гладкий|tupai|squirrel|chipmunk)$/i
-handler.register = true
+
 export default handler
 
 const getRandom = (ext) => {

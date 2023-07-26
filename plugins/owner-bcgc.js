@@ -26,5 +26,5 @@ handler.help = ['broadcastgroup', 'bcgc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
 handler.command = /^(обьявление)$/i
 handler.owner = true
-handler.register = true
+
 export default handler

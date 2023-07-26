@@ -4,5 +4,5 @@ await  conn.groupLeave(m.chat)}
 handler.command = /^(выйти|leavegc|leave|salirdelgrupo)$/i
 handler.group = true
 handler.rowner = true
-handler.register = true
+
 export default handler

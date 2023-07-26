@@ -6,7 +6,7 @@ handler.help = ['Setdesc <text>']
 handler.tags = ['group']
 handler.command = /^описание|setdesc$/i
 handler.group = true
-handler.register = true
+
 handler.admin = true
 handler.botAdmin = true
 export default handler

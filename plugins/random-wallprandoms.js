@@ -123,7 +123,7 @@ conn.sendButton(m.chat, `_${command}_`.trim(), `*◈•@${who.split("@s.whatsapp
 
 }
 handler.command = ['wpmontaña', 'pubg', 'wpgaming', 'wpaesthetic', 'wprandom', 'coffee', 'pentol', 'caricatura', 'ciberespacio', 'technology', 'doraemon', 'hacker', 'planeta', 'randomprofile', 'wpaesthetic2', 'wpvehiculo', 'wallhp', 'wpmoto']
-handler.register = true
+
 export default handler
 
 async function wallpaper(title, page = '1') {

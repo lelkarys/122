@@ -30,6 +30,6 @@ conn.sendFile(m.chat, result.images.jpg.image_url, 'error.jpg', AnimeInfo, m)
 throw `*[❗] ERROR, INTENTELO DE NUEVO*`  
 }}
 handler.command = /^(anime|animeinfo)$/i
-handler.register = true
+
 handler.limit = 2
 export default handler 

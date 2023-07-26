@@ -27,5 +27,5 @@ m.reply(`*[❗] ЗДРАВСТВУЙТЕ, СООБЩАЮ ВАМ, ЧТО ВИРТ
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}    
    
 }}
-handler.register = true
+
 export default handler

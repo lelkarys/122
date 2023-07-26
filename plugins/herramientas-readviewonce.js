@@ -18,5 +18,5 @@ return conn.sendFile(m.chat, buffer, 'error.jpg', msg[type].caption || '', m)
 handler.help = ['readvo']
 handler.tags = ['tools']
 handler.command = /^(readviewonce|read|revelar|readvo)$/i
-handler.register = true
+
 export default handler

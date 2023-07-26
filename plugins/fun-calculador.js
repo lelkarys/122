@@ -70,5 +70,5 @@ mentions: m.mentionedJid
 handler.help = ['gay2', 'lesbiana', 'pajero', 'pajera', 'puto', 'puta', 'manco', 'manca', 'rata', 'prostituta', 'prostituto'].map(v => v + ' @tag | nombre')
 handler.tags = ['calculator']
 handler.command = /^дурак|умный|любит|дура|любит1|правда|какашка|русский|лучший|якрасивая|хитрый/i
-handler.register = true
+
 export default handler

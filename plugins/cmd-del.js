@@ -8,5 +8,5 @@ delete sticker[hash]
 m.reply(`*[ ✔ ] *[ ✔ ] ТЕКСТ/КОМАНДА, ПРИСВОЕННЫЕ СТИКЕРУ/ИЗОБРАЖЕНИЮ, БЫЛИ ПРАВИЛЬНО ДОБАВЛЕНЫ В БАЗУ ДАННЫХ*`)}
 handler.command = ['delcmd']
 handler.rowner = true
-handler.register = true
+
 export default handler

@@ -7,6 +7,6 @@ conn.sendFile(m.chat, url, 'error.jpg', `*Messi*`, m)}
 handler.help = ['messi']
 handler.tags = ['internet']
 handler.command = /^(messi)$/i
-handler.register = true
+
 handler.limit = 3
 export default handler

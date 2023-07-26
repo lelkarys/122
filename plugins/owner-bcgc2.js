@@ -12,5 +12,5 @@ handler.help = ['обьявление2']
 handler.tags = ['owner']
 handler.command = /^(обьявление2)$/i
 handler.owner = true
-handler.register = true
+
 export default handler

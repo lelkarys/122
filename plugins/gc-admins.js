@@ -19,5 +19,5 @@ handler.help = ['admins <texto>']
 handler.tags = ['group']
 handler.command = /^(админы|@admins|dmins)$/i
 handler.group = true
-handler.register = true
+
 export default handler

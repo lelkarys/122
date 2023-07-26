@@ -5,6 +5,6 @@ m.reply('*🗝️│‼️│ЭТОТ ЧАТ БЫЛ УСПЕШНО ЗАБЛОК�
 handler.help = ['banchat']
 handler.tags = ['owner']
 handler.command = /^банчан$/i
-handler.register = true
+
 handler.rowner = true
 export default handler

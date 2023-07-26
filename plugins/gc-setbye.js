@@ -8,5 +8,5 @@ handler.help = ['setbye <text>']
 handler.tags = ['group']
 handler.command = ['прощание'] 
 handler.admin = true
-handler.register = true
+
 export default handler

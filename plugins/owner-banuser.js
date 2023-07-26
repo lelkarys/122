@@ -8,5 +8,5 @@ users[who].banned = true
 m.reply('*[❗𝐈𝐍𝐅𝐎❗]ПОЛЬЗОВАТЕЛЬ БЫЛ УСПЕШНО ЗАБАНЕН \n ПОЛЬЗОВАТЕЛЬ НЕ СМОЖЕТ ИСПОЛЬЗОВАТЬ БОТА ДО ТЕХ ПОР, ПОКА ОН НЕ БУДЕТ РАЗБЛОКИРОВАН*')    }
 handler.command = /^бан$/i
 handler.rowner = true
-handler.register = true
+
 export default handler

@@ -13,6 +13,6 @@ ${text}`.trim(), m)
 handler.help = ['pinterest <keyword>']
 handler.tags = ['internet']
 handler.command = /^(pinterest)$/i
-handler.register = true
+
 handler.limit = 2
 export default handler

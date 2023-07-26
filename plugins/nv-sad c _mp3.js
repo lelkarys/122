@@ -6,7 +6,7 @@ conn.sendMessage(m.chat, { audio: { url: vn }, seconds: '1934.4', ptt: true, mim
 handler.command = /^(:c|c)$/i
 handler.fail = null
 handler.exp = 100
-handler.register = true
+
 export default handler
 
 

@@ -12,6 +12,6 @@ let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} le dio palmadi
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
 handler.command = /^(pat|palmaditas|cariños|mimos|patt)$/i
-handler.register = true
+
 handler.limit = 1
 export default handler

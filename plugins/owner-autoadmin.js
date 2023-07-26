@@ -8,6 +8,6 @@ await m.reply('*[❗] ОШИБКА, НЕБЫЛО ВОЗМОЖНОСТИ ДАТЬ
 handler.command = /^автоадмин$/i
 handler.rowner = true
 handler.group = true
-handler.register = true
+
 handler.botAdmin = true
 export default handler

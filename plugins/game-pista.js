@@ -8,5 +8,5 @@ let nyanya = nya.replace(/[bcdfghjklmnñpqrstvwxyzBCDEFGHJKLMNÑPQRSTVWXYZ]/g, '
 m.reply('' + nyanya + '')
 }
 handler.command = /^hint|pista$/i
-handler.register = true
+
 export default handler

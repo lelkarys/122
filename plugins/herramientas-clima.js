@@ -19,5 +19,5 @@ return "*[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾 𝚂𝙴 𝙷𝙰𝙽 𝙴𝙽𝙲�
 handler.help = ['clima *<ciudad/país>*']
 handler.tags = ['herramientas']
 handler.command = /^(clima|tiempo)$/i
-handler.register = true
+
 export default handler

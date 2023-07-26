@@ -287,5 +287,4 @@ conn.sendMessage(m.chat, { text: `🧿 КОМАНДА: ${type}\n️🔮СТАТ�
 handler.help = ['вкл', 'выкл'].map(v => v + 'ючить <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((вк|вык)лючить|(tru|fals)e|(turn)?[01])$/i
-handler.register = true
 export default handler

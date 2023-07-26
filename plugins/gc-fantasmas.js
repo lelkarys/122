@@ -21,5 +21,5 @@ m.reply(`*[ ⚠ Реверсия деактивации ⚠ ]*\n\n*группа:
 handler.command = /^(verfantasmas|молчуны|призраки)$/i
 handler.admin = true
 handler.botAdmin = true
-handler.register = true
+
 export default handler

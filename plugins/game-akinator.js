@@ -39,5 +39,5 @@ m.reply('*[❗] 𝙴𝚁𝚁𝙾𝚁, 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝙻𝙾 𝙼�
 handler.menu = ['akinator']
 handler.tags  = ['game']
 handler.command = /^(akinator)$/i
-handler.register = true
+
 export default handler

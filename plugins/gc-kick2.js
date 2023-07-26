@@ -9,6 +9,6 @@ await conn.groupParticipantsUpdate(m.chat, [user], 'remove')}
 handler.command = /^(снести2|echar2|hechar2|sacar2)$/i
 handler.admin = true
 handler.group = true
-handler.register = true
+
 handler.botAdmin = true
 export default handler

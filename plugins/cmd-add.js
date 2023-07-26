@@ -11,5 +11,5 @@ m.reply(`*[ ✔ ] ТЕКСТ/КОМАНДА, ПРИСВОЕННЫЕ СТИКЕР
 }
 handler.command = ['setcmd', 'добавитькоманду', 'cmdadd', 'cmdset']
 handler.rowner = true
-handler.register = true
+
 export default handler

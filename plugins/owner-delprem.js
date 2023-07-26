@@ -21,5 +21,5 @@ handler.tags = ['owner']
 handler.command = /^(удалитьпрем)$/i
 handler.group = true
 handler.rowner = true
-handler.register = true
+
 export default handler

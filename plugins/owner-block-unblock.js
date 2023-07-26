@@ -16,5 +16,5 @@ break
 if (res[0]) conn.reply(m.chat, `*[❗] КОМАНДА БЫЛА ИСПОЛЬЗОВАНА УСПЕШНО ${command} ДЛЯ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾/𝙰 ${res ? `${res.map(v => '@' + v.split("@")[0])}` : ''}*`, m, { mentions: res })}
 handler.command = /^(block|разблокировать)$/i
 handler.rowner = true
-handler.register = true
+
 export default handler

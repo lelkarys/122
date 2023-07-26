@@ -18,5 +18,5 @@ return conn.sendMessage(m.chat, { video: {url: url}, caption: `Aqui tienes`, fil
 handler.tags = ['tools']
 handler.help = ['tamaño <cantidad>']
 handler.command = /^(length|filelength|edittamaño|totamaño|tamaño)$/i
-handler.register = true
+
 export default handler

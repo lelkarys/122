@@ -11,5 +11,5 @@ handler.help = ['waifu']
 handler.tags = ['anime']
 handler.command = /^(waifu)$/i
 handler.limit = 3
-handler.register = true
+
 export default handler

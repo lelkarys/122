@@ -28,7 +28,7 @@ handler.tags = ['group']
 handler.command = /^(снятьадмина|quitarpoder|quitaradmin)$/i
 handler.group = true
 handler.admin = true
-handler.register = true
+
 handler.botAdmin = true
 handler.fail = null
 export default handler

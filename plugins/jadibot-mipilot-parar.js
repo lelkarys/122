@@ -18,5 +18,5 @@ let handler  = async (m, { conn }) => {
   handler.botAdmin = false
   
   handler.fail = null
-  handler.register = true
+  
   export default handler

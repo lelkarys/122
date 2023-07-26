@@ -28,5 +28,5 @@ let buttonMessage= {
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 handler.command = ['лгнпмормпдлдлелгеаглеа']
-handler.register = true
+
 export default handler

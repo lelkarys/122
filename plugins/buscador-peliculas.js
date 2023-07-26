@@ -18,7 +18,7 @@ let ads = '*💫 • Рекомендуемый блокировщик рекл�
 conn.sendMessage(m.chat, { image: { url: img }, caption: ads + res }, {quoted: m})
 }
 handler.command = ['cuevana', 'pelisplus']
-handler.register = true
+
 handler.limit = 3
 export default handler
 

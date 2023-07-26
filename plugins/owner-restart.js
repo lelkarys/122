@@ -12,5 +12,5 @@ handler.tags = ['owner']
 handler.command = /^(перезагрузить)$/i
 
 handler.rowner = true
-handler.register = true
+
 export default handler

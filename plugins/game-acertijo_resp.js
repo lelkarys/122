@@ -18,5 +18,5 @@ else m.reply('Respuesta incorrecta!')}
 return !0
 }
 handler.exp = 0
-handler.register = true
+
 export default handler

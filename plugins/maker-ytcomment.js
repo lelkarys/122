@@ -9,6 +9,6 @@ username: conn.getName(m.sender)
 handler.help = ['ytcomment <comment>']
 handler.tags = ['maker'] 
 handler.command = /^(ytcomment)$/i
-handler.register = true
+
 handler.limit = 1
 export default handler
