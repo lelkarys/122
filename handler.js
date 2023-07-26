@@ -1283,7 +1283,7 @@ if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - 
                         }
                     }
                     if (m.limit)
-                        m.reply()
+                        m.reply
                 }
                 break
             }
