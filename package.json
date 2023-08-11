@@ -14,16 +14,16 @@
         "test": "node test.js",
         "test2": "nodemon index.js"
     },
-    "homepage": "https://github.com/Whatsapp1231234/ayra",
+    "homepage": "https://github.com/lelkarys/122",
     "author": {
         "name": "OFC-YOVANI"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Whatsapp1231234/ayra.git"
+        "url": "git+https://github.com/lelkarys/122.git"
     },
     "bugs": {
-        "url": "https://github.com/Whatsapp1231234/ayra/issues"
+        "url": "https://github.com/lelkarys/122/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
