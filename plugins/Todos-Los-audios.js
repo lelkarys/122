@@ -67,28 +67,28 @@ let vn = './Audios/секс.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(Fiesta del admin|fiesta del admin)/gi)) {    
-let vn = './Audios/admin.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(чмо|Чмо)/gi)) {    
+let vn = './Audios/чмо.mp4'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(fiesta del administrador)/gi)) {    
-let vn = './Audios/fiesta.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(споки|Споки|Спокойной ночи|спокойной ночи)/gi)) {    
+let vn = './Audios/споки.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(fiesta del admin 3|atención grupo|atencion grupo|aviso importante|fiestadeladmin3)/gi)) {    
-let vn = './Audios/Fiesta1.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(пидор|Пидор|сученок|Сученок)/gi)) {    
+let vn = './Audios/пидор.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(gemidos|gemime|gime|gemime|gemi2)/gi)) {    
-let vn = './Audios/gemi2.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(дурак|Дурак|чума|Чума)/gi)) {    
+let vn = './Audios/дурак.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(audio hentai|Audio hentai|audiohentai|Audiohentai)/gi)) {    
-let vn = './Audios/hentai.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(казел|Казел)/gi)) {    
+let vn = './Audios/казел.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
