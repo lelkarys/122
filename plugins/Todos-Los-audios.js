@@ -92,13 +92,13 @@ let vn = './Audios/казел.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(sexo|Sexo|Hora de sexo|hora de sexo)/gi)) {    
-let vn = './Audios/maau1.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(сиськи|Сиськи)/gi)) {    
+let vn = './Audios/сиськи.mp4'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(laoracion|La biblia|La oración|La biblia|La oración|la biblia|La Biblia)/gi)) {    
-let vn = './Audios/ora.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(сиськи2|сиськи2)/gi)) {    
+let vn = './Audios/симьки2.mp4'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
